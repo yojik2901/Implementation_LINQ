@@ -10,6 +10,16 @@ namespace Implementation_LINQ
     {
         static void Main(string[] args)
         {
+            TestSet test = new TestSet();
+
+            var result = test.Where(i => i % 2 == 0);
+
+            foreach (var VARIABLE in result)
+            {
+                Console.WriteLine(VARIABLE);
+            }
+
+            Console.ReadLine();
         }
     }
 }
